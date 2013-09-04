@@ -1,0 +1,9 @@
+box: ami-fd511c94
+box-type: ami
+build:
+  steps:
+    - script:
+        name: docker build
+        code: |
+          cd $WERCKER_SOURCE_DIR
+          sudo docker build -t mies/rethinkdb .
