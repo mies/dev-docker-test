@@ -6,6 +6,6 @@ build:
         name: docker build
         code: |
           cd $WERCKER_SOURCE_DIR
-          sudo curl http://get.docker.io | sh
+          sudo curl http://get.docker.io | sudo sh
           sudo docker version
           sudo docker build -t mies/rethinkdb .
